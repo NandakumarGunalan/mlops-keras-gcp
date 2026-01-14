@@ -1,0 +1,12 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "-t"
+      - "us-central1-docker.pkg.dev/mlops-keras-gcp/mlops-repo/mlops-keras-gcp:latest"
+      - "-f"
+      - "docker/Dockerfile"
+      - "."
+images:
+  - "us-central1-docker.pkg.dev/mlops-keras-gcp/mlops-repo/mlops-keras-gcp:latest"
+

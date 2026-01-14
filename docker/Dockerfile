@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY serving ./serving
-COPY artifacts ./artifacts
+#COPY artifacts ./artifacts
 
 # Environment variable for model path
 ENV MODEL_PATH=artifacts/run_20260113_130420/model.keras
